@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+/* Default CSS Styling by Josh Comeau */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* My CSS */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, button, input, select, textarea {
+  font-family: 'JetBrains Mono', monospace;
+  
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+}
+
+textarea, input {
+    outline: none;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 0;
+
+  background-color: rgb(14, 14, 14);
+}
+
+i {
+  color: white;
+}
+
+#Signup-Page {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.image-container {
+  margin: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  
+}
+.form-container{
+  margin: 0;
+  flex-grow: 3;
+  flex-shrink: 1;
+  background-color: #f7fafc;
+  width: 75vh;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  justify-content: center;
+  gap: 16px;
+  
+}
+
+.div-submit, .form-container > h2, p {
+  padding: 0 40px;
+}
+
+.form {
+  box-shadow: 3px 4px 15px #d9d1dd;
+  padding: 10px 40px;
+}
+
+.form > h2 {
+  color: rgb(95, 93, 90);
+  
+}
+
+p > span {
+  color: #746864;
+}
+#signupform {
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+  gap: 24px;
+}
+
+.submit {
+  font-size: 14px;
+  color: #f7fafc;
+  background-color: #3c312f;
+  border-radius: 5px;
+  align-content: center;
+  padding: 6px 14px;
+  
+}
+
+#signupform input[type="text"], #signupform input[type="email"],
+#signupform input[type="tel"], #signupform input[type="password"], #signupform textarea {
+  background-color: #fff;
+  border: 1px solid #E5E7EB;
+  padding: 5px 5px;
+  font-size: 16px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+
+#signupform input[type="text"]:focus, 
+#signupform input[type="email"]:focus, 
+#signupform input[type="tel"]:focus, 
+#signupform input[type="password"]:focus, 
+#signupform textarea:focus {
+    background-color: #fbf8fd;
+    border: 1.5px solid #948b99; 
+}
+
+#signupform input:valid, #signupform textarea:valid {
+  border: 1.5px solid rgb(163, 221, 228);
+}
+
+
+
+#signupform input:focus:invalid:not(:placeholder-shown), 
+#signupform textarea:focus:invalid:not(:placeholder-shown) {
+  border: 1.5px solid #b92326;
+  background-color: rgba(185, 35, 38, 0.25);
+}
+
+#signupform input:invalid:not(:placeholder-shown),
+#signupform textarea:invalid:not(:placeholder-shown) {
+  border: 1.5px solid #b92326;
+  background-color: rgba(185, 35, 38, 0.25);
+}
